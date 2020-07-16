@@ -31,7 +31,7 @@ export class UniversityListComponent implements OnInit {
       this.universities = result;
       this.loading = false;
     }, error => {
-      this.universities = [],
+      this.universities = [];
       this.error = true;
       this.errorText = 'An unexpected error has occurred.  Please try again later.';
       this.loading = false;
