@@ -5,6 +5,8 @@
         </div>
     </div>
 
+    <div class="pagination-bar"><pagination-controls autoHide="true" responsive="true" (pageChange)="currentPage = $event"></pagination-controls></div>
+    
     <div class="table-header university-row" [hidden]="loading">
         <div class="university-column">
             <span>Name</span>
@@ -35,7 +37,6 @@
                 </div>
             </div>
         </div>
-        <div class="pagination-bar"><pagination-controls autoHide="true" responsive="true" (pageChange)="currentPage = $event"></pagination-controls></div>
     </div>
 
 </div>
